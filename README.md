@@ -2,7 +2,7 @@
 
 To reproduce the issue first ensure you have docker installed, then run:
 
-'docker build -m 4gb .'
+`docker build -m 4gb .`
 
 You should see error around heap allocation.
 
