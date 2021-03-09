@@ -1,20 +1,9 @@
 # adam-nuxt-demo-heap
 
-## Build Setup
+To reproduce the issue first ensure you have docker installed, then run:
 
-```bash
-# install dependencies
-$ yarn install
+'docker build -m 4gb .'
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+You should see error around heap allocation.
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Note that Docker caches things, so to reproduce each time just make a tiny change to /pages/index.vue
